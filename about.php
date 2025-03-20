@@ -24,7 +24,7 @@
             <dt>Bui Minh Duc --- s105691917 --- 105691917@student.swin.edu.au</dt> 
                 <dd>Team member, working on index and about pages</dd>       
         </dl>
-        <table>
+        <table class="timetable">
             <caption>Days and session times</caption>
                 <tr>
                     <td>Class</td>
