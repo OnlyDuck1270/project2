@@ -69,11 +69,14 @@
     <?php include 'menu.inc'; ?>
 
     <h1 class="manage_title">HR Manager - Manage Expressions of Interest</h1>
+    
+    <!-- Form for listing all EOIs -->
     <h2 class="manage">List All EOIs</h2>
     <form method="post">
         <input type="hidden" name="action" value="list_all">
         <input type="submit" value="Show All EOIs">
     </form>
+
     <!-- Form for listing EOIs by job reference -->
     <h2 class="manage">List EOIs by Job Reference Number</h2>
     <form method="post">
@@ -113,11 +116,11 @@
             <option value="New">New</option>
             <option value="Current">Current</option>
             <option value="Final">Final</option>
-        </select> 
-        <br> <br>
+        </select> <br> <br>
         <input type="hidden" name="action" value="update_status">
         <input type="submit" value="Update Status">
     </form>
+
     <!-- Display results -->
     <?php if (is_object($result) && $result->num_rows > 0) { ?>
         <h2 class="manage">Results</h2>
@@ -141,6 +144,11 @@
                     <th>Skill of Frontend Developer</th>
                     <th>Skill of Frontend Developer</th>
                     <th>Skill of Frontend Developer</th>
+                    <th>Skill of Frontend Developer</th>
+                    <th>Skill of Frontend Developer</th>
+                    <th>Skill of Frontend Developer</th>
+                    <th>Skill of AI Engineer</th>
+                    <th>Skill of AI Engineer</th>
                     <th>Skill of AI Engineer</th>
                     <th>Skill of AI Engineer</th>
                     <th>Skill of AI Engineer</th>
@@ -167,11 +175,16 @@
                         <td><?php echo $row['FTD23_skill4']; ?></td>
                         <td><?php echo $row['FTD23_skill5']; ?></td>
                         <td><?php echo $row['FTD23_skill6']; ?></td>
+                        <td><?php echo $row['FTD23_skill7']; ?></td>
+                        <td><?php echo $row['FTD23_skill8']; ?></td>
+                        <td><?php echo $row['FTD23_skill9']; ?></td>
                         <td><?php echo $row['AIE45_skill1']; ?></td>
                         <td><?php echo $row['AIE45_skill2']; ?></td>
                         <td><?php echo $row['AIE45_skill3']; ?></td>
                         <td><?php echo $row['AIE45_skill4']; ?></td>
                         <td><?php echo $row['AIE45_skill5']; ?></td>
+                        <td><?php echo $row['AIE45_skill6']; ?></td>
+                        <td><?php echo $row['AIE45_skill7']; ?></td>
                         <td><?php echo $row['other_skills']; ?></td>
                     </tr>
                 <?php } ?>
