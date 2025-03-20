@@ -123,7 +123,6 @@
     }
 
 
-    }
 
     } else {
         echo "<p>No jobs found.</p>";
