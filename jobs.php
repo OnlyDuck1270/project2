@@ -110,6 +110,7 @@
         echo "<br>";
         echo "<section class=\"preferable\">";
         echo "<p><strong>Preferable:</strong></p>";
+        echo "<p><strong>Preferable:</strong> " . htmlspecialchars($row["preferable"]) . "</p>";
 
         echo "<ul>";
         $preferables = explode("{", $row["preferable"]);
@@ -117,7 +118,11 @@
             echo "<li>" . htmlspecialchars(trim($preferable)) . "</li>";
         }
         echo "</ul>";
+
         echo "</section>";
+    }
+
+
     }
 
     } else {
